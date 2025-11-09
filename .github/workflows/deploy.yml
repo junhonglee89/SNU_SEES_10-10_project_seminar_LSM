@@ -31,11 +31,23 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install -U jupyter-book
+        pip install -U pip
+        pip install -r requirements.txt
 
     - name: Build the book
       run: |
-        jupyter-book build .
+        set -e  # Exit on any error
+        jupyter-book build . --all
+
+    - name: Verify build output
+      run: |
+        if [ ! -d "_build/html" ]; then
+          echo "Error: _build/html directory not found!"
+          ls -la _build/ || echo "_build directory does not exist"
+          exit 1
+        fi
+        echo "Build successful! Contents of _build/html:"
+        ls -la _build/html/ | head -20
 
     - name: Setup Pages
       uses: actions/configure-pages@v4
