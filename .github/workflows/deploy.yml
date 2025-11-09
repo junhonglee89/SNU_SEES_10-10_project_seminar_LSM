@@ -1,39 +1,50 @@
-name: Deploy Jupyter Book to GitHub Pages
+name: Deploy Jupyter Book
 
 on:
   push:
     branches:
-      - main  # Change to 'master' if your default branch is 'master'
-  workflow_dispatch:  # Allows manual triggering
+      - main
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+    - name: Checkout repo
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
 
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt || pip install jupyter-book sphinx jupytext myst-parser sphinx-book-theme
+    - name: Install dependencies
+      run: |
+        pip install -U jupyter-book
 
-      - name: Build Jupyter Book
-        run: |
-          jupyter-book build . --all
+    - name: Build the book
+      run: |
+        jupyter-book build .
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'  # Change to 'refs/heads/master' if needed
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_build/html
+    - name: Setup Pages
+      uses: actions/configure-pages@v4
 
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: '_build/html'
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
