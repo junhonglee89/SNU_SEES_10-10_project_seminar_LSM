@@ -1,0 +1,36 @@
+/* Custom styling for line numbers in code blocks */
+
+/*
+  Use a very specific selector and !important to override theme defaults.
+  This targets the pre tag directly for the code block.
+*/
+div.highlight > pre {
+    background: #F3F4F5 !important; /* A dark theme background */
+}
+
+/*
+  Style the line number container.
+  This should now have a distinct background from the code.
+*/
+.highlight .linenos {
+    background-color: #ffffff !important;
+    /* border-right: 2px solid #076ed5 !important; */
+    padding-right: 15px !important;
+    margin-right: 15px !important;
+}
+
+/*
+  Style the individual line numbers.
+  Set the background to transparent to inherit from .linenos.
+*/
+.highlight .linenos .lineno {
+    color: #d626b3 !important;
+    background-color: transparent !important;
+    padding: 0 8px !important;
+    border: none !important;
+}
+
+/* Make sure the code content area has proper spacing */
+.highlight .code {
+    padding-left: 10px;
+} 
