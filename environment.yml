@@ -1,0 +1,19 @@
+name: SNU_2025-02_micrometeorology_LSM
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.9
+  - numpy
+  - xarray
+  - scipy
+  - pandas
+  - matplotlib
+  - cartopy
+  - seaborn
+  - sympy
+  - ffmpeg
+  - jupyter
+  - netcdf4
+  - nc-time-axis
+  - jupyter-book=1.0.4.post1
+  - tqdm

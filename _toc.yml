@@ -1,0 +1,18 @@
+format: jb-book
+root: home
+parts:
+- caption: Lecture
+  numbered: 1
+  chapters:
+  - file: Lecture/introduction
+  - file: Lecture/downward_shortwave_radiation
+  - file: Lecture/albedo
+  - file: Lecture/downward_longwave_radiation
+  - file: Lecture/upward_longwave_radiation
+  - file: Lecture/sensible_heat_flux
+  - file: Lecture/latent_heat_flux
+  - file: Lecture/ground_heat_flux
+  - file: Lecture/water_budget
+- caption: Postamble
+  chapters:
+  - file: references
