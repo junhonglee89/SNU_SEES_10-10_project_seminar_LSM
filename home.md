@@ -188,7 +188,7 @@ brew install --cask anaconda
 
 ##### 직접 toy model 수행해보기
 
-1. jupyter notebook 파일 받기
+1. jupyter notebook 파일 (강의자료) 받기
 ```{code-block} bash
 :linenos:
 git clone git@github.com:junhonglee89/SNU_2025-02_micrometeorology_LSM.git
@@ -217,6 +217,74 @@ jupyter notebook
 <br>
 <br>
 <hr>
+
+##### Remote linux server에서 직접 toy model 수행해보기
+
+1. SSH로 서버 접속
+```{code-block} bash
+:linenos:
+ssh -X <account>@<ip> -P <server_port>
+```
+
+2. jupyter notebook (강의자료) 파일 받기
+```{code-block} bash
+:linenos:
+git clone git@github.com:junhonglee89/SNU_2025-02_micrometeorology_LSM.git
+```
+
+3. anaconda environment 설치
+```{code-block} bash
+:linenos:
+cd ./SNU_2025-02_micrometeorology_LSM
+conda env create --file environment.yml
+conda activate SNU_2025-02_micrometeorology_LSM
+```
+
+4. jupyter notebook 실행
+```{code-block} bash
+:linenos:
+jupyter notebook --no-browser --port=<my_custom_port>
+```
+
+5. URL 복사
+```{code-block} bash
+:linenos:
+...
+...
+[I 17:25:22.695 NotebookApp] The port <my_custom_port> is already in use, trying another port.
+[I 17:25:22.758 NotebookApp] JupyterLab extension loaded from /ghome/junhong/anaconda3/lib/python3.8/site-packages/jupyterlab
+[I 17:25:22.758 NotebookApp] JupyterLab application directory is /ghome/junhong/anaconda3/share/jupyter/lab
+[I 17:25:22.759 NotebookApp] Serving notebooks from local directory: /ghome/junhong
+[I 17:25:22.760 NotebookApp] The Jupyter Notebook is running at:
+[I 17:25:22.760 NotebookApp] http://localhost:<new_port>/?token=<token>
+[I 17:25:22.760 NotebookApp]  or http://127.0.0.1:<new_port>/?token=<token>
+[I 17:25:22.760 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 17:25:22.767 NotebookApp]
+
+    To access the notebook, open this file in a browser:
+        file:///ghome/junhong/.local/share/jupyter/runtime/nbserver-3062269-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:<new_port>/?token=<token>
+     or http://127.0.0.1:<new_port>/?token=<token>
+4[I 17:26:05.941 NotebookApp] 302 GET /?token=<token> (127.0.0.1) 0.41ms
+...
+...
+```
+위 출력물 중 `http://localhost:<new_port>/?token=<token>` 부분을 복사 해놓는다.
+
+
+6. SSH로 localhost 열여주기
+새로운 터미널에서,
+```{code-block} bash
+:linenos:
+ssh -L <new_port>:localhost:<new_port> <account>@<ip> -P <server_port>
+```
+
+7. 웹 브라우저에서 복사해두었던 `http://localhost:<new_port>/?token=<token>`로 접속한다.
+
+8. 원하는 jupyter notebook 파일을 열고, 설치했던 kernel을 선택한다.
+
+
 
 ### 4. 기타 참고 사항
 
