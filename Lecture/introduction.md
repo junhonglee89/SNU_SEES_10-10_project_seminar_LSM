@@ -66,7 +66,7 @@ where $\alpha$ is the surface albedo, $SW_d$ is downward solar radiation *at the
 `````
 
 `````{admonition} Three heat fluxes
-1) sensitble heat flux ($H$), 
+1) sensible heat flux ($H$), 
 1) latent heat flux ($\lambda E$),
 1) ground heat flux ($G$).
 
