@@ -36,7 +36,7 @@
 
 <figure>
   <img src="../_static/images/interaction_of_LSM.png" alt="Interaction of LSM">
-  <figcaption>Figure 3. Interaction between amtospheric model and LSM.</figcaption>
+  <figcaption>Figure 3. Interaction between atmospheric model and LSM.</figcaption>
 </figure>
 
 
@@ -82,7 +82,7 @@ where $C_{soil}$ is the area-specific heat capacity of the uppermost soil layer 
 
 - The land surface:
   1) **gains** energy through $SW_d$ and $LW_d$ from the atmosphere.
-  1) **looses** energy through $H$, $\lambda E$ and $\epsilon \sigma T_s^4$ to the atmosphere.
+  1) **loses** energy through $H$, $\lambda E$ and $\epsilon \sigma T_s^4$ to the atmosphere.
 
 <mark>**$\therefore$ The atmosphere acts as a upper boundary condition.**</mark>
 
@@ -92,7 +92,7 @@ where $C_{soil}$ is the area-specific heat capacity of the uppermost soil layer 
 **Atmosphere perspective**
 
 - The atmosphere:
-  1) **looses** energy through $LW_d$ to the land surface.
+  1) **loses** energy through $LW_d$ to the land surface.
   1) **gains** energy through $H$, $\lambda E$, and $\epsilon \sigma T_s^4$ from the land surface.
   
 <mark>**$\therefore$ The land surface acts as a lower boundary condition.**</mark>
@@ -109,7 +109,7 @@ where $C_{soil}$ is the area-specific heat capacity of the uppermost soil layer 
 
 - Water in land is balanced between **1) gain from the atmosphere** and **2) loss to the atmosphere and ocean** (Fig. 5, {cite:p}`ureyen2022multivariate`).
 1) **gains** water through precipitation from the atmosphere.
-1) **looses** water through evapotranspiration, runoff, and drainage (groundwater flow) to the atmosphere and *ocean*.
+1) **loses** water through evapotranspiration, runoff, and drainage (groundwater flow) to the atmosphere and *ocean*.
 
 <mark>**$\therefore$ The atmosphere acts as a upper boundary condition.**</mark>
 
@@ -122,8 +122,8 @@ where $C_{soil}$ is the area-specific heat capacity of the uppermost soil layer 
 
 **Atmosphere perspective**
 
-- Water in the atmosphere is balanced betwee **1) gain from the land and ocean** and **2) loss to the land and ocean**
-1) **looses** water through precipitation to land and ocean.
+- Water in the atmosphere is balanced between **1) gain from the land and ocean** and **2) loss to the land and ocean**
+1) **loses** water through precipitation to land and ocean.
 1) **gain** water through evapotranspiration from the land and ocean.
 
 <mark>**$\therefore$ The land surface acts as a lower boundary condition.**</mark>
