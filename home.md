@@ -1,4 +1,4 @@
-# SNU 2025-02 Micrometeorology: Land surface model
+# SNU SEES 10-10 Project Seminar: Land surface model
 
 **By [Junhong Lee (이준홍)][junhong_homepage], Kyungpook national university**
 
@@ -114,7 +114,7 @@ The lecture combines theoretical foundations with practical coding exercises usi
 [이곳][repo]에서 받거나, sever에서 다음 명령어를 통하여 받을 수 있습니다:
 ```{code-block} bash
 :linenos:
-git clone git@github.com:junhonglee89/SNU_2025-02_micrometeorology_LSM.git
+git clone git@github.com:junhonglee89/SNU_SEES_10-10_project_seminar_LSM.git
 ```
 
 <br>
@@ -191,7 +191,7 @@ brew install --cask anaconda
 1. jupyter notebook 파일 (강의자료) 받기
 ```{code-block} bash
 :linenos:
-git clone git@github.com:junhonglee89/SNU_2025-02_micrometeorology_LSM.git
+git clone git@github.com:junhonglee89/SNU_SEES_10-10_project_seminar_LSM.git
 ```
 
 <br>
@@ -199,9 +199,9 @@ git clone git@github.com:junhonglee89/SNU_2025-02_micrometeorology_LSM.git
 2. anaconda environment 설치
 ```{code-block} bash
 :linenos:
-cd ./SNU_2025-02_micrometeorology_LSM
+cd ./SNU_SEES_10-10_project_seminar_LSM
 conda env create --file environment.yml
-conda activate SNU_2025-02_micrometeorology_LSM
+conda activate SNU_SEES_10-10_project_seminar_LSM
 ```
 
 <br>
@@ -229,15 +229,15 @@ ssh -X <account>@<ip> -P <server_port>
 2. jupyter notebook (강의자료) 파일 받기
 ```{code-block} bash
 :linenos:
-git clone git@github.com:junhonglee89/SNU_2025-02_micrometeorology_LSM.git
+git clone git@github.com:junhonglee89/SNU_SEES_10-10_project_seminar_LSM.git
 ```
 
 3. anaconda environment 설치
 ```{code-block} bash
 :linenos:
-cd ./SNU_2025-02_micrometeorology_LSM
+cd ./SNU_SEES_10-10_project_seminar_LSM
 conda env create --file environment.yml
-conda activate SNU_2025-02_micrometeorology_LSM
+conda activate SNU_SEES_10-10_project_seminar_LSM
 ```
 
 4. jupyter notebook 실행
@@ -295,9 +295,9 @@ ssh -L <new_port>:localhost:<new_port> <account>@<ip> -P <server_port>
 
 
 [junhong_homepage]: https://scholar.google.com/citations?user=CfzQ610AAAAJ&hl=en
-[git_page]: https://junhonglee89.github.io/SNU_2025-02_micrometeorology_LSM
+[git_page]: https://junhonglee89.github.io/SNU_SEES_10-10_project_seminar_LSM
 [jupyterbook]: https://jupyterbook.org
 [climlab]: https://github.com/climlab/climlab
-[book]: https://junhonglee89.github.io/SNU_2025-02_micrometeorology_LSM/
-[repo]: https://github.com/junhonglee89/SNU_2025-02_micrometeorology_LSM
+[book]: https://junhonglee89.github.io/SNU_SEES_10-10_project_seminar_LSM
+[repo]: https://github.com/junhonglee89/SNU_SEES_10-10_project_seminar_LSM
 [notebook]: https://jupyter-notebook.readthedocs.io/en/stable/
