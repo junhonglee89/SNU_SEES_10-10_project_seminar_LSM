@@ -1,4 +1,4 @@
-name: SNU_2025-02_micrometeorology_LSM
+name: SNU_SEES_10-10_project_seminar_LSM
 channels:
   - conda-forge
 dependencies:

@@ -2,14 +2,14 @@
 
 1. jupyter notebook 파일 받기
 ```{code-block} bash
-git clone git@github.com:junhonglee89/SNU_2025-02_micrometeorology_LSM.git
+git clone git@github.com:junhonglee89/SNU_SEES_10-10_project_seminar_LSM.git
 ```
 
 2. anaconda environment 설치
 ```{code-block} bash
-cd ./SNU_2025-02_micrometeorology_LSM
+cd ./SNU_SEES_10-10_project_seminar_LSM
 conda env create --file environment.yml
-conda activate SNU_2025-02_micrometeorology_LSM
+conda activate SNU_SEES_10-10_project_seminar_LSM
 ```
 
 3. jupyter notebook 실행

@@ -5,7 +5,7 @@
 
 #######################################################################################
 # Book settings
-title                       : SNU 2025-02 Micrometeorology, LSM # The title of the book. Will be placed in the left navbar.
+title                       : SNU SEES 10-10 project seminar, LSM # The title of the book. Will be placed in the left navbar.
 author                      : Junhong Lee (junhonglee89@gmail.com) # The author of the book
 copyright                   : "2025"  # Copyright year to be placed in the footer
 logo                        : "./_static/images/logo.png"  # A path to the book logo
@@ -45,7 +45,7 @@ parse:
 #######################################################################################
 # HTML-specific settings
 html:
-  baseurl                   : "/SNU_2025-02_micrometeorology_LSM/"  # Base URL for GitHub Pages (required for assets to load correctly)
+  baseurl                   : "/SNU_SEES_10-10_project_seminar_LSM/"  # Base URL for GitHub Pages (required for assets to load correctly)
   favicon                   : ""  # A path to a favicon image
   use_edit_page_button      : false  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
   use_repository_button     : true  # Whether to add a link to your repository button
@@ -69,7 +69,7 @@ launch_buttons:
   notebook_interface        : classic  # The interface interactive links will activate ["classic", "jupyterlab"]
 
 repository:
-  url                       : https://github.com/junhonglee89/SNU_2025-02_micrometeorology_LSM  # The URL to your book's repository
+  url                       : https://github.com/junhonglee89/SNU_SEES_10-10_project_seminar_LSM  # The URL to your book's repository
   path_to_book              : ""  # A path to your book's folder, relative to the repository root.
   branch                    : main  # Which branch of the repository should be used when creating links
 
