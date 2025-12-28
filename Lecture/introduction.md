@@ -53,7 +53,7 @@
 (Fig. 4, {cite:p}`sellers1997modeling`).
 
 <figure>
-  <img src="../_static/images/energy_budget.png" alt="Energy budget">
+  <img src="../_static/images/energy_budget.png" alt="Energy budget" style="width:70%">
   <figcaption>Figure 4. Energy budget.</figcaption>
 </figure>
 
