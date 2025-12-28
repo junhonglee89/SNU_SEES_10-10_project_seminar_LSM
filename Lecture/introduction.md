@@ -71,7 +71,7 @@ where $\alpha$ is the surface albedo, $SW_d$ is downward solar radiation *at the
 1) ground heat flux ($G$).
 
 $$
-C_{soil} \frac{\partial T_{s}}{\partial t} = (1-\alpha) \cdot SW_d + LW_d - LW_u - H - \lambda E - G    \tag{1.2}
+C_{soil} \frac{\partial T_{s}}{\partial t} = R_n - H - \lambda E - G    \tag{1.2}
 $$
 
 where $C_{soil}$ is the area-specific heat capacity of the uppermost soil layer [J/m<sup>2</sup>/K<sup>1</sup>]
